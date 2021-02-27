@@ -2,9 +2,42 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet"href="{{ url_for('static', filename='stylesheets/index.css') }}">
+    <title>Space-Cial</title>
   </head>
-  <body>
+  <body style="color: #c4bedc; background-color: #c4bedc;">
+    <nav class = "navbar">
+      <h1>Space-Cial</h1>
+    </nav>
+    <div class="container input">
+      <h5 id='header'class = "pt-5">What did the stars look like on your special day?</h5>
+      <form  action="/result" method="POST">
 
+
+      <div class="container row">
+        <p>Your Name: </p>
+        <input type="text" name="yourName" >
+      </div>
+      <div class="container row">
+        <p>Your Partner's Name: </p>
+        <input type="text" name="yourPartnerName" >
+      </div>
+      <div class="container row">
+        <p>Your Special Date </p>
+        <input type="text" name="date" value = "YYYY-MM-DD" >
+      </div>
+
+    </div>
+    <div class="container submit">
+      <input type="submit" name="" value="Enter">
+    </div>
+    </form>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   </body>
 </html>

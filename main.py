@@ -7,12 +7,13 @@ app = Flask(__name__)
 
 @app.route('/', methods = ['GET', 'POST'])
 def index():
-    getPictureFromNASA("test")
-    return "Test"
+    return render_template('index.html')
 
 @app.route('/result', methods = ['GET', 'POST'])
 def result():
-    url = getPictureFromNASA("test")
+    if(request.method == 'POST'):
+        date = request.form['date']
+        url = getPictureFromNASA(date)
     return render_template("result.html" , url=url)
 
 
