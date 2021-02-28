@@ -14,7 +14,7 @@ def result():
     if(request.method == 'POST'):
         date = request.form['date']
         url = getPictureFromNASA(date)
-    return render_template("result.html" , url=url)
+    return render_template("result.html" , url=url, date=date)
 
 
 if __name__ == "__main__":

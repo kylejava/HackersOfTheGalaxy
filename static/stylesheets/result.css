@@ -1,0 +1,41 @@
+@font-face{
+font-family: Vidaloka;
+src: url(../fonts/Vidaloka.ttf);
+}
+@font-face{
+font-family: OleoScript;
+src: url(../fonts/OleoScript.ttf);
+}
+
+.navbar{
+  background-color: #262255;
+}
+img{
+  width: 400px;
+  height: 400px;
+}
+.result{
+
+  position: absolute;
+  width: 859px;
+  height: 601px;
+  left: 311px;
+  top: 150px;
+
+  background: #C4BDDD;
+  border: 4px solid #80559B;
+  box-sizing: border-box;
+}
+
+#header{
+  text-align: center;
+  font-size: 60px;
+color: #443147;
+font-family: Vidaloka;
+}
+
+h3{
+  color:#80559B;
+  font-family: OleoScript;
+
+}
