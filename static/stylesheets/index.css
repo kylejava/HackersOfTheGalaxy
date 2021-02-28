@@ -29,14 +29,22 @@ color: #443147;
 font-family: Vidaloka;
 }
 
-p{
+h3{
   color:#80559B;
   font-family: OleoScript;
 
 }
-input{
-  width: 468px;
 
+h1{
+  color:#80559B;
+  font-family: Vidaloka;
+}
+input[type=submit]{
+  width: 368px;
+  height: 100px;
+  font-family: Vidaloka;
+  font-size: 70px;
+  background-color: #80559B;
 }
 
 .submit{
@@ -45,4 +53,9 @@ input{
 height: 107px;
 left: 526px;
 top: 700px;
+}
+
+.img-fluid{
+  width: 100px;
+  height: 100px;
 }

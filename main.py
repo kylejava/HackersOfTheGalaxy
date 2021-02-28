@@ -12,8 +12,11 @@ def index():
 @app.route('/result', methods = ['GET', 'POST'])
 def result():
     if(request.method == 'POST'):
-        date = request.form['date']
-        url = getPictureFromNASA(date)
+        requestedDate = request.form['date']
+        yourName = request.form['yourName']
+        yourPartnerName = request.form['yourPartnerName']
+        date = yourName + " & "+ yourPartnerName + ", these are what the stars looked like on "+ requestedDate
+        url = getPictureFromNASA(requestedDate)
     return render_template("result.html" , url=url, date=date)
 
 

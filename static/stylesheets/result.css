@@ -11,8 +11,12 @@ src: url(../fonts/OleoScript.ttf);
   background-color: #262255;
 }
 img{
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
+}
+h1{
+  color:#80559B;
+  font-family: Vidaloka;
 }
 .result{
 
